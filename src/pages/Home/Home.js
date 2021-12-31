@@ -76,8 +76,11 @@ const Home = () => {
         </Heading>
 
         <Spacer />
-        <Heading pt={7} as='h3' size='lg'> Read and write real reviews for landlords and rentals. </Heading>
+        <Heading pt={7} as='h3' size='lg'> Read and write real reviews for landlords and rentals off campus. </Heading>
         <Spacer />
+
+        
+
 
         <FeatureList />
 
