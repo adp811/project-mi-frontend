@@ -126,15 +126,15 @@ const Registration = () => {
                                 <Button
                                     loadingText="Submitting"
                                     size={'lg'}
-                                    bg={'black'}
-                                    color={'white'} >
-                                    Sign up
+                                    colorScheme={'white'}
+                                    bgGradient={'linear(to-r, #000428, #004e92)'} >
+                                    Sign Up
                                 </Button>
                             </Stack>
                                 
                             <Stack pt={5}>
                                 <Text align={'center'}>
-                                    Already a user? <Link to="/auth/login" >Login</Link>
+                                    Already a user? <Link to="/auth/login">Login</Link>
                                 </Text>
                             </Stack>
 

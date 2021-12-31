@@ -15,7 +15,7 @@ import {
     IconButton, 
     Divider
   } from '@chakra-ui/react';
-import reactDom from 'react-dom';
+
 
 const Login = () => {
     return (
@@ -91,9 +91,9 @@ const Login = () => {
                 <Button
                   variant={'solid'}
                   size={'lg'}
-                  bg={'black'}
-                  color={'white'} >
-                  Sign in
+                  colorScheme={'white'} 
+                  bgGradient={'linear(to-r, #000428, #004e92)'} >
+                  Sign In
                 </Button>
 
                 <Stack spacing={3}>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaInstagram, FaFacebookSquare, FaGithubAlt } from 'react-icons/fa';
-import { Box, Flex, Stack, Button, IconButton } from '@chakra-ui/react';
+import { FaInstagram, FaFacebookSquare, FaGithubAlt, FaEraser } from 'react-icons/fa';
+import { Box, Flex, Stack, Button, IconButton, Heading, Spacer, Center } from '@chakra-ui/react';
+import FeatureList from '../../components/Home/FeatureList';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -41,7 +42,7 @@ const Home = () => {
                             
                             <Link to="/auth/login">
                                 <Button 
-                                    variant='outline'
+                                    variant='ghost'
                                     size={'lg'}
                                     colorScheme={'black'} >
 
@@ -54,7 +55,7 @@ const Home = () => {
                                     variant='solid'
                                     size={'lg'}
                                     colorScheme={'white'}
-                                    bg={'black'} >
+                                    bgGradient={'linear(to-r, #000428, #004e92)'} >
 
                                     Sign Up
                                 </Button>
@@ -65,6 +66,21 @@ const Home = () => {
 
                 </Flex>
         </Box>
+
+        <Heading 
+            size={'lg'} 
+            fontSize={'125px'}
+            bgClip={'text'}
+            bgGradient={'linear(to-r, #000428, #004e92)'} > 
+            HutSpot 
+        </Heading>
+
+        <Spacer />
+        <Heading pt={7} as='h3' size='lg'> Read and write real reviews for landlords and rentals. </Heading>
+        <Spacer />
+
+        <FeatureList />
+
 
       </ Stack>
     )
