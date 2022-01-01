@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaInstagram, FaFacebookSquare, FaGithubAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import {
     Flex,
@@ -12,43 +11,19 @@ import {
     Button,
     Heading,
     Spacer, 
-    IconButton, 
     Divider
   } from '@chakra-ui/react';
-
+  
+import SocialLinks from '../../components/Root/SocialLinks';
 
 const Login = () => {
     return (
 
-        <Stack spacing={0}> 
+        <Stack > 
 
           <Box px={10} pt={5} pd ={2} >
-
             <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-
-                <Flex alignItems={'center'}>
-                    <Stack direction={'row'} spacing={2}>
-
-                    <IconButton
-                        icon={<FaInstagram fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    <IconButton
-                        icon={<FaFacebookSquare fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    <IconButton
-                        icon={<FaGithubAlt fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    </Stack>
-                </Flex>
+              <SocialLinks />
             </Flex>
           </Box>
 
@@ -63,11 +38,8 @@ const Login = () => {
               px={6}>
 
             <Stack align={'center'}>
-
               <Heading fontSize={'4xl'}>Sign in to your account!</Heading>
               <Spacer />
-
-
             </Stack>
 
             <Box
@@ -104,7 +76,7 @@ const Login = () => {
                     align={'center'}
                     justify={'space-between'}>
                     <Spacer />
-                    <Link to="auth/forgot">
+                    <Link to="/auth/forgot">
                       <Text>Forgot Password?</Text>
                     </Link>
                     <Spacer />                

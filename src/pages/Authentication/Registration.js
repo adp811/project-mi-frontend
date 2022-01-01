@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaInstagram, FaFacebookSquare, FaGithubAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import {
     Flex,
@@ -21,42 +20,20 @@ import {
   
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from 'react-icons/md';
 import { useState } from 'react';
+import SocialLinks from '../../components/Root/SocialLinks';
 
 const Registration = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <Stack> 
+
+        <Stack pb={100} > 
 
             <Box px={10} pt={5} pd ={2} >
-
-            <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-
-                <Flex alignItems={'center'}>
-                    <Stack direction={'row'} spacing={2}>
-
-                    <IconButton
-                        icon={<FaInstagram fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    <IconButton
-                        icon={<FaFacebookSquare fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    <IconButton
-                        icon={<FaGithubAlt fontSize='1.35em' />}
-                        size={'lg'}
-                        bg={'white'} >
-                    </IconButton>
-
-                    </Stack>
+                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+                    <SocialLinks />
                 </Flex>
-            </Flex>
             </Box>
 
             <Flex
@@ -70,13 +47,10 @@ const Registration = () => {
                     px={6}>
 
                     <Stack align={'center'}>
-
                         <Heading fontSize={'4xl'} textAlign={'center'}>
                             Sign up to post a review!
                         </Heading>
-
                         <Spacer />                        
-
                     </Stack>
 
                     <Box
