@@ -25,7 +25,7 @@ const FeatureList = () => {
     return (
         <Center>
             <Box w={'70%'} >
-                <SimpleGrid columns={3} spacing={10}>
+                <SimpleGrid columns={3} spacing={10} >
                     <Feature
                     icon={<HiUserGroup />}
                     title={'Lifetime Support'}

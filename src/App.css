@@ -1,9 +1,7 @@
 .App {
   text-align: center;
-  position: relative;
   min-height: 100vh;
-}
-
-.App-content-wrap {
-  padding-bottom: 67; /* Footer height */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }

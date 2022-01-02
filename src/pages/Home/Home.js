@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Flex, Stack, Button, Heading, Spacer } from '@chakra-ui/react';
+import { Box, Flex, Stack, Button, Heading, Spacer, Divider } from '@chakra-ui/react';
 import FeatureList from '../../components/Home/FeatureList';
 import SocialLinks from '../../components/Root/SocialLinks';
 import { Link } from 'react-router-dom';
+import SearchBar from '../../components/Home/SearchBar';
 
 const Home = () => {
     return ( 
@@ -49,15 +50,12 @@ const Home = () => {
             HutSpot 
         </Heading>
 
-        <Spacer />
         <Heading pt={7} as='h3' size='lg'> Read and write real reviews for landlords and rentals off campus. </Heading>
-        <Spacer />
-
         
+        <SearchBar />
+        <FeatureList />   
 
-
-        <FeatureList />
-
+        <Box w={'100%'} h={10} ></Box> 
 
       </ Stack>
     )
